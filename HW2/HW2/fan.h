@@ -15,19 +15,35 @@ class fan
 			on = false;
 			radius = 5;
 		}
-		void changeSpeed(int nSpeed)
+
+		void changeSpeed(int nSpeed)//takes an int and changes speed to new int
 		{
-			speed = nSpeed
+			speed = nSpeed;
 		}
 
-		void changeOn(bool nOn)
+		int getSpeed()//returns the speed int
 		{
-			on = nOn
+			return speed;
 		}
 
-		void changeRadius(double nRadius)
+		void changeOn(bool nOn)//takes a bool and changes the on variable
 		{
-			radius = nRadius
+			on = nOn;
+		}
+
+		bool getOn()//returns the on bool
+		{
+			return on;
+		}
+
+		void changeRadius(double nRadius)//takes a double and changes the radius to the new double
+		{
+			radius = nRadius;
+		}
+
+		double getRadius()//returns the radious double
+		{
+			return radius;
 		}
 
 };
