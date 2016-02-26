@@ -23,7 +23,10 @@
     <ClInclude Include="fan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="QuadratricEquation.h">
+    <ClInclude Include="QuadraticEquation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvenNumber.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

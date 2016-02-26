@@ -145,8 +145,9 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EvenNumber.h" />
     <ClInclude Include="fan.h" />
-    <ClInclude Include="QuadratricEquation.h" />
+    <ClInclude Include="QuadraticEquation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

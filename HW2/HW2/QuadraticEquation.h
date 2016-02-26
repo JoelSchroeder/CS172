@@ -1,5 +1,6 @@
 #ifndef QUADRATICEQUATION_H_
 #define QUADRATICEQUATION_H_
+#include <cmath>
 
 class QuadraticEquation
 {
@@ -46,9 +47,33 @@ class QuadraticEquation
 			return c;
 		}
 
-		double getDescriminant()
+		double getDescriminant()//returns the descriminant of the quadratic equation; computes b^2-4ac
 		{
+			return ((b*b) - (4 * (a*c)));
+		}
 
+		double getRoot1()//returns the first solution of the quadratic equation if the descriminant is greater than 0
+		{
+			if (getDescriminant() >= 0)
+			{
+				return (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+			}
+			else
+			{
+				return 0;
+			}
+		}
+
+		double getRoot2()//returns the second solution of the quadratic equation if the descriminant is greater than 0
+		{
+			if (getDescriminant() > 0)
+			{
+				return (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+			}
+			else
+			{
+				return 0;
+			}
 		}
 
 
