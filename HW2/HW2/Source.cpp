@@ -36,7 +36,7 @@ void EX201()
 
 void EX202()
 {
-	double a, b, c;
+	double a, b, c;								//Derek - this is good Joel, only thing is that we needed a overload constructor as well the setters will work, and is effective, but also needed the																constructor - 3
 	QuadraticEquation quad;
 	cout << "enter a, b, and c\n";
 	cin >> a >> b >> c;//gets values for a, b, and c
