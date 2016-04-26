@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Vector.h"
 #include <vector>
 #include <ctime>
 #include <cstdlib>
-
+#include "Vector.h"
 using namespace std;
 
 
@@ -30,7 +29,7 @@ int main()
 {
 	EX6_01();//12.2
 	EX6_02();//12.4
-	//EX6_03();//12.8   //This code should work fine but I kept getting unresloved externals even after copying into new file... so I gave up.
+	EX6_03();//12.8  
 	EX6_04();//12.20
 
 }
@@ -93,9 +92,8 @@ bool IsSorted(const T list[], int size)//takes any type of array and checks if t
 /////////////////////////////////////////////////////// 6_03 ////////////////////////////////////////////////////////////////
 void EX6_03()//12.8
 {
-	//This should work fine but I keep getting "unresolved externals" even after copying code into new file, I give up, but the code should work fine
 	//the below code is to test the vector class
-	/*Vector<int> v1;
+	Vector<int> v1;
 	v1.push_back(1);
 	v1.push_back(2);
 	v1.push_back(3);
@@ -109,7 +107,7 @@ void EX6_03()//12.8
 	v1.pop_back();
 	cout << v1.at(0);
 	cout << v2.at(0);
-	cout << v1.size();*/
+	cout << v1.size();
 }
 
 

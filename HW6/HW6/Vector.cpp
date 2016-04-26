@@ -15,14 +15,14 @@ void Vector<T>::doubleArray()
 
 //defualt constructor
 template<class T>
-Vector<T>::Vector(): curentSize(0), maxSize(2)
+Vector<T>::Vector<T>(): curentSize(0), maxSize(2)
 {
 	list = new T[2];//creates array
 }
 
 //constructor with specified size
 template<typename T>
-Vector<T>::Vector(int size) :curentSize(size), maxSize(size)
+Vector<T>::Vector<T>(int size) :curentSize(size), maxSize(size)
 {
 
 	list = new T[size];//creates array
@@ -34,7 +34,7 @@ Vector<T>::Vector(int size) :curentSize(size), maxSize(size)
 
 //constructor with specified size and defualt value
 template<typename T>
-Vector<T>::Vector(int size, T defualtValue) : curentSize(size), maxSize(size)
+Vector<T>::Vector<T>(int size, T defualtValue) : curentSize(size), maxSize(size)
 {
 	list = new T[size];//creates array
 	for (int i = 0;i < size;i++)//populates the array with specified types
@@ -57,7 +57,7 @@ void Vector<T>::push_back(T element)
 template<typename T>
 void Vector<T>::pop_back()
 {
-	size--
+	size--;
 }
 
 //returns the size of this vector
@@ -71,7 +71,7 @@ const int Vector<T>::size()
 template<typename T>
 const T Vector<T>::at(int index)
 {
-	return list[index]
+	return list[index];
 }
 
 //returns true if the vector is empty
@@ -104,7 +104,7 @@ void Vector<T>::swap(Vector v2)
 
 	while (size < tempSize)//makes this array larger if it is to small
 	{
-		doubleArray()
+		doubleArray();
 	}
 
 	T tempArray[v2.size()];//this will hold the contents of v2 after v2 is cleared
